@@ -9,6 +9,10 @@ A simple YouTube Video Downloader GUI application built using Python, `tkinter`,
 - Easy-to-use graphical interface created with `customtkinter`
 - Windows `.exe` support for standalone usage
 
+
+![image](https://github.com/user-attachments/assets/d4860057-cec5-4f6a-a25b-09c27ce121f3)
+
+
 ## Table of Contents
 
 - [Installation](#installation)
