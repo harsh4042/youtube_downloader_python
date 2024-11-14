@@ -4,12 +4,10 @@ A simple YouTube Video Downloader GUI application built using Python, `tkinter`,
 
 ## Features
 
-- Download videos from YouTube in the best available quality.
-- Animated progress bar with percentage completion display.
-- Easy-to-use graphical interface created with `customtkinter`.
-- Windows `.exe` support for standalone usage.
-
----
+- Download videos from YouTube in the best available quality
+- Animated progress bar with percentage completion display
+- Easy-to-use graphical interface created with `customtkinter`
+- Windows `.exe` support for standalone usage
 
 ## Table of Contents
 
@@ -21,78 +19,85 @@ A simple YouTube Video Downloader GUI application built using Python, `tkinter`,
 - [License](#license)
 - [Contributing](#contributing)
 
----
+## Requirements
+
+- Python 3.6 or later
+- Windows OS (for .exe support)
+- Required Python packages:
+  - `customtkinter`
+  - `yt_dlp` (handles various video formats and resolutions)
 
 ## Installation
 
-1. **Clone this repository:**
-
+1. Clone this repository:
    ```bash
    git clone https://github.com/your-username/youtube-downloader.git
    cd youtube-downloader
-Install the required Python packages:
+   ```
 
-bash
-Copy code
-pip install -r requirements.txt
-Contents of requirements.txt:
+2. Install the required Python packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-plaintext
-Copy code
+### Contents of requirements.txt:
+```plaintext
 customtkinter
 yt_dlp
-Requirements
-Python 3.6 or later
-Windows OS (for .exe support)
-The following Python packages:
-customtkinter
-yt_dlp
-Note: yt_dlp is used for YouTube video downloads and handles various formats and resolutions.
+```
 
-Usage
-Run the application using the following command:
+## Usage
 
-bash
-Copy code
-python youtube_downloader.py
-Enter the YouTube video link in the text box and click Download.
+1. Run the application using the following command:
+   ```bash
+   python youtube_downloader.py
+   ```
 
-The video will download to the specified folder path in the script (currently set to C:\Users\bagul\Downloads\Telegram Desktop).
-A smooth progress bar and percentage will indicate download progress.
-Building the Executable
-To convert this Python script to a Windows .exe file, you can use PyInstaller.
+2. Enter the YouTube video link in the text box and click Download
+3. The video will download to the specified folder path in the script (currently set to `C:\Users\bagul\Downloads\Telegram Desktop`)
+4. A smooth progress bar and percentage will indicate download progress
 
-Install PyInstaller:
+## Building the Executable
 
-bash
-Copy code
-pip install pyinstaller
-Run PyInstaller to build a standalone executable:
+To convert this Python script to a Windows .exe file:
 
-bash
-Copy code
-pyinstaller --onefile --noconsole youtube_downloader.py
-This will create a dist folder containing youtube_downloader.exe.
-Double-click youtube_downloader.exe to run the application as a standalone Windows application.
-Troubleshooting
-Issue: Download Jumps from 0% to 100%
-If the progress bar jumps straight from 0% to 100%, please ensure that:
+1. Install PyInstaller:
+   ```bash
+   pip install pyinstaller
+   ```
 
-yt_dlp is correctly installed.
-You have a stable internet connection.
-Issue: SSL Certificate Error
-Some users may encounter SSL errors due to outdated certificates. To fix this, update Python’s SSL certificates by running:
+2. Build the standalone executable:
+   ```bash
+   pyinstaller --onefile --noconsole youtube_downloader.py
+   ```
 
-bash
-Copy code
+The process will create a `dist` folder containing `youtube_downloader.exe`. Double-click the `.exe` file to run the application as a standalone Windows application.
+
+## Troubleshooting
+
+### Issue: Download Jumps from 0% to 100%
+
+If the progress bar jumps straight from 0% to 100%, ensure that:
+- `yt_dlp` is correctly installed
+- You have a stable internet connection
+
+### Issue: SSL Certificate Error
+
+Some users may encounter SSL errors due to outdated certificates. To fix this, update Python's SSL certificates:
+```bash
 /Applications/Python\ 3.x/Install\ Certificates.command
-Other Issues
-If you encounter any other issues, please open an issue in this repository or consult the yt_dlp documentation for additional help.
+```
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+### Other Issues
 
-Contributing
+If you encounter any other issues:
+- Open an issue in this repository
+- Consult the `yt_dlp` documentation for additional help
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
 Pull requests are welcome. For significant changes, please open an issue first to discuss what you would like to change.
-   git clone https://github.com/your-username/youtube-downloader.git
-   cd youtube-downloader
