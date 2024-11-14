@@ -38,7 +38,7 @@ def start_download():
         # Options for yt_dlp
         ydl_opts = {
             'format': 'best',  # Choose the best available quality
-            'outtmpl': r"C:\Users\bagul\Downloads\Telegram Desktop\%(title)s.%(ext)s",  # Specify the download location
+            # 'outtmpl': r"C:\Users\bagul\Downloads\Telegram Desktop\%(title)s.%(ext)s",  # Specify the download location
             'progress_hooks': [progress_hook]  # Attach the progress hook
         }
         with YoutubeDL(ydl_opts) as ydl:
